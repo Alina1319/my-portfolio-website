@@ -15,7 +15,7 @@ aNavigation.forEach(a => {
     })
 });
 
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper', {
     cssMode: true,
     loop: true,
 
