@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Neculai Alina</title>
+    <link rel="icon" href="img/avatar.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/media.css"/>
+    <link rel="stylesheet" href="./css/modal.css"/>
+    <link rel="stylesheet" href="./css/scroll_effect.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script defer src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script defer type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./js/app.js"></script>
+    <script defer src="./js/scroll_effect.js"></script>
+</head>
+<body>
+<div class="hamburger-container">
+    <div id='test' class="clasa1">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<nav class="navbar-sticky navbar-nav">
+    <a id="logo">
+        <i class="fas fa-terminal"></i> AN</a>
+    </a>
+    <a href="#" class="home">HOME</a>
+    <a href="#student" class="about-me">STUDENT</a>
+    <a href="#about" class="about-me">ABOUT ME</a>
+    <a href="#portfolio" class="about-me">PORTFOLIO</a>
+    <a href="#contact-me" class="portfolio">Contact</a>
+</nav>
+<main>
+    <header id="header">
+        <div class="overlay overlay-lg">
+            <img src="./img/shapes/square.png" class="shape square" alt=""/>
+            <img src="./img/shapes/circle.png" class="shape circle" alt=""/>
+            <img src="./img/shapes/half-circle.png" class="shape half-circle1" alt=""/>
+            <img src="./img/shapes/half-circle.png" class="shape half-circle2" alt=""/>
+            <img src="./img/shapes/x.png" class="shape xshape" alt=""/>
+            <img src="./img/shapes/wave.png" class="shape wave wave1" alt=""/>
+            <img src="./img/shapes/wave.png" class="shape wave wave2" alt=""/>
+            <img src="./img/shapes/triangle.png" class="shape triangle" alt=""/>
+            <img src="./img/shapes/letters.png" class="letters" alt=""/>
+            <img src="./img/shapes/points1.png" class="points points1" alt=""/>
+        </div>
+
+        <section class="header-content">
+            <div class="container1 grid-2">
+                <div class="column-1 first-description ">
+                    <h1 class="header-title">Alina Neculai</h1>
+                    <p class="text">
+                        Hello, I'm Alina, aspiring web developer. Welcome to my website. Here you can find information
+                        about me and some of the projects I have done.
+                    </p>
+                    <a href="files/Alina_Neculai-CV.pdf" download="Alina's CV" class="btn"> Download CV
+                        <i class="fas fa-download"></i></a>
+                </div>
+                <div class="column-2 image">
+                    <img src="./img/avatar.png" class="img-element z-index" alt=""/>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="student section" id="student">
+        <div class="container1">
+            <div class="section-header padding-student">
+                <h3 class="title iOTitle intro-text2" data-title="Student at">iO Academy</h3>
+            </div>
+            <div class="section-body grid-2">
+                <div class="column-2 image io">
+                    <img class="" src="img/iO_Academy_FullStack.png" alt="iO Academy">
+                </div>
+                <div class="column-1">
+                    <img src="./img/shapes/points4.png" class="points" alt=""/>
+                    <h3 class="title-sm intro-text4">Full-stack Web Development Student
+                        start on 4th May 2021</h3>
+                    <p class="text intro-text">
+                        I started this bootcamp with the hope of learning to code and start a career in a role that
+                        gives me rewards. By working in an Agile way on team-based projects, we focus on understanding
+                        the fundamental concepts and best practices of programming using different technologies like
+                        git, HTML, CSS, JS, PHP. During the program I also became a Certified Scrum Master.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about section" id="about">
+        <div class="container1">
+            <div class="section-header padding-aboutme">
+                <h3 class="title about-me intro-text5" data-title="Who Am I">About me</h3>
+            </div>
+            <div class="section-body description-section grid-2">
+                <div class="column-2 image">
+                    <img src="./img/shapes/points4.png" class="points" alt=""/>
+                    <video class="video-element" src="img/long.mp4" muted autoplay loop playsinline></video>
+                </div>
+                <div class="column-1">
+                    <h3 class="title-sm my-name intro-text3">Hello, I'm Alina</h3>
+                    <p class="text about-me intro-text1">
+                        I studied at a technical high school in Romania, followed by a 2-year degree in Electrical
+                        Engineering. I could tell the technologies were outdated and impractical, so I decided to start
+                        fresh in the UK, where I hoped to discover my passion. Here, I improved my English in customer
+                        service jobs. I'm an avid gamer, so I wanted to learn how to organise esports events by studying
+                        Event Management at UWE Bristol. It was a great learning experience! I especially enjoyed
+                        covering statistics and finance
+                        <button id="modal-btn"> . . . read more</button>
+                    </p>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <span class="close-btn">&times;</span>
+                            <div class="modal-information">
+                                <div class="modal-text">
+                                    Whilst at university, I really wanted to get into tech, so I got a job in IT
+                                    support,
+                                    enjoyed it very much and decided to learn web development. This is when I discovered
+                                    my
+                                    passion, and also my mission in life. My dream is to solve important problems with
+                                    my
+                                    programming skills, especially in the medical and education sectors.
+                                    In my personal life, I am a total geek. I love Pokémon, superheroes, Star Wars, and
+                                    gaming (my first developer salary will probably go towards building a new gaming
+                                    PC).
+                                    When I'm not in front of a screen I enjoy going fishing and visiting castles or
+                                    museums.
+                                </div>
+                                <div class="modal-video">
+                                    <video class="" src="img/guitar.mp4" muted autoplay loop playsinline></video>
+                                </div>
+                            </div>
+                            <img class="bb8" src="img/bb8.gif"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="portfolio"></div>
+    <section class="student section">
+        <div class="">
+            <div class="section-header padding-portfolio">
+                <h3 class="title iOTitle intro-text6" data-title="My Works">Portfolio</h3>
+            </div>
+            <div class="swiper-container portfolio1">
+                <div class="swiper-wrapper wrap-container">
+                    <div class="swiper-slide project blog-card">
+                        <div class="project-img">
+                            <img class="image-project" src="./img/aptitudetest.png" alt="Screenshot">
+                        </div>
+                        <div class="project-details">
+                            <div class="tech-icons flex-container">
+                                <div class="first-icons">
+                                    <i class="html">
+                                        <ion-icon name="logo-html5"></ion-icon>
+                                    </i>
+                                    <i class="css">
+                                        <ion-icon name="logo-css3"></ion-icon>
+                                    </i>
+                                    <i class="js">
+                                        <ion-icon name="logo-javascript"></ion-icon>
+                                    </i>
+                                    <i class="ts">
+                                        <p class="iconify ts-logo" data-icon="logos-typescript-icon"
+                                           data-inline="false"></p>
+                                    </i>
+                                </div>
+                                <div class="second-icons">
+                                    <i class="code">
+                                        <a href="https://github.com/iO-Academy/aptitude-test">
+                                            <ion-icon name="code-slash-outline"></ion-icon>
+                                        </a>
+                                    </i>
+                                </div>
+                            </div>
+                            <h2 class="project-name">iO Aptitude Test</h2>
+                            <p class="project-description">We worked as a team on a JS/TypeScript legacy project for a
+                                real-life web application used by iO Academy to test the analytical abilities of
+                                potential students.</p>
+                            <a href="https://github.com/iO-Academy/aptitude-test" class="btn-project">Demo<i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide project">
+                        <div class="project-img">
+                            <img class="image-project" src="./img/memorygame.png" alt="Screenshot">
+                        </div>
+                        <div class="project-details">
+                            <div class="tech-icons flex-container">
+                                <div class="first-icons">
+                                    <i class="html">
+                                        <ion-icon name="logo-html5"></ion-icon>
+                                    </i>
+                                    <i class="css">
+                                        <ion-icon name="logo-css3"></ion-icon>
+                                    </i>
+                                    <i class="js">
+                                        <ion-icon name="logo-javascript"></ion-icon>
+                                    </i>
+                                </div>
+                                <div class="second-icons">
+                                    <i class="preview">
+                                        <a href="https://dev.io-academy.uk/projects/2021-may/memory-game/">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </a>
+                                    </i>
+                                    <i class="code">
+                                        <a href="https://github.com/iO-Academy/2021-koalas-memory-pattern-game">
+                                            <ion-icon name="code-slash-outline"></ion-icon>
+                                        </a>
+                                    </i>
+                                </div>
+                            </div>
+                            <h2 class="project-name">Memory Game</h2>
+                            <p class="project-description">In publishing and graphic design, Lorem ipsum is a
+                                placeholder
+                                text
+                                commonly used to demonstrate the visual form of a.n publishing and graphic design.</p>
+                            <a href="https://dev.io-academy.uk/projects/2021-may/memory-game/"
+                               class="btn-project">Demo<i class="fas fa-arrow-right"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide project" id="project">
+                        <div class="project-img">
+                            <img class="image-project" src="./img/pokemonproject.png" alt="Screenshot">
+                        </div>
+                        <div class="project-details">
+                            <div class="tech-icons flex-container">
+                                <div class="first-icons">
+                                    <i class="html">
+                                        <ion-icon name="logo-html5"></ion-icon>
+                                    </i>
+                                    <i class="css">
+                                        <ion-icon name="logo-css3"></ion-icon>
+                                    </i>
+                                    <i class="php">
+                                        <i class="fab fa-php"></i>
+                                    </i>
+                                </div>
+                                <div class="second-icons">
+                                    <i class="preview">
+                                        <a href="https://2021-alinan.dev.io-academy.uk/collector_pokemon-main/">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </a>
+                                    </i>
+                                    <i class="code">
+                                        <a href="https://github.com/AlinaNeculai/collector_pokemon">
+                                            <ion-icon name="code-slash-outline"></ion-icon>
+                                        </a>
+                                    </i>
+                                </div>
+                            </div>
+                            <h2 class="project-name">Pokemon Collector</h2>
+                            <p class="project-description">In publishing and graphic design, Lorem ipsum is a
+                                placeholder
+                                text
+                                commonly used to demonstrate the visual form of a.n publishing and graphic design.</p>
+                            <a href="https://2021-alinan.dev.io-academy.uk/collector_pokemon-main/" class="btn-project">Demo<i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide project">
+                        <div class="project-img">
+                            <img class="image-project" src="./img/carProject.png" alt="Screenshot">
+                        </div>
+                        <div class="project-details">
+                            <div class="tech-icons flex-container">
+                                <div class="first-icons">
+                                    <i class="html">
+                                        <ion-icon name="logo-html5"></ion-icon>
+                                    </i>
+                                    <i class="css">
+                                        <ion-icon name="logo-css3"></ion-icon>
+                                    </i>
+                                    <i class="php">
+                                        <i class="fab fa-php"></i>
+                                    </i>
+                                </div>
+                                <div class="second-icons">
+                                    <i class="preview">
+                                        <a href="https://dev.io-academy.uk/projects/2021-may/2021-may-koalaCars/">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </a>
+                                    </i>
+                                    <i class="code">
+                                        <a href="https://github.com/iO-Academy/2021-may-koalaCars">
+                                            <ion-icon name="code-slash-outline"></ion-icon>
+                                        </a>
+                                    </i>
+                                </div>
+                            </div>
+                            <h2 class="project-name">Cars Collector</h2>
+                            <p class="project-description">This was an OOP PHP based project focused on writing best
+                                practice code following a software architecture and SOLID Principles.</p>
+                            <a href="https://dev.io-academy.uk/projects/2021-may/2021-may-koalaCars/"
+                               class="btn-project">Demo<i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide project">
+                        <div class="project-img">
+                            <img class="image-project" src="./img/iptracker.png" alt="Screenshot">
+                        </div>
+                        <div class="project-details">
+                            <div class="tech-icons flex-container">
+                                <div class="first-icons">
+                                    <i class="html">
+                                        <ion-icon name="logo-html5"></ion-icon>
+                                    </i>
+                                    <i class="css">
+                                        <ion-icon name="logo-css3"></ion-icon>
+                                    </i>
+                                    <i class="js">
+                                        <ion-icon name="logo-javascript"></ion-icon>
+                                    </i>
+                                </div>
+                                <div class="second-icons">
+                                    <i class="preview">
+                                        <a href="https://2021-alinan.dev.io-academy.uk/ip-traker/">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </a>
+                                    </i>
+                                    <i class="code">
+                                        <a href="https://github.com/AlinaNeculai/IP_tracker">
+                                            <ion-icon name="code-slash-outline"></ion-icon>
+                                        </a>
+                                    </i>
+                                </div>
+                            </div>
+                            <h2 class="project-name">IP Tracker</h2>
+                            <p class="project-description">In publishing and graphic design, Lorem ipsum is a
+                                placeholder
+                                text
+                                commonly used to demonstrate the visual form of a.n publishing and graphic design.</p>
+                            <a href="https://2021-alinan.dev.io-academy.uk/ip-traker/" class="btn-project">Demo<i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev">
+                    <i class="fas fa-chevron-left swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="fas fa-chevron-right swiper-portfolio-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+<section id="contact-me" class="contact-details">
+    <div class="find-me">
+        <h2 class="get-in-touch-title title padding-contact">Get in touch</h2>
+        <p class="thank-you">Thank you for visiting my website, if you want you can find me on:</p>
+        <div class="flex-icons">
+            <div class="icons-contact">
+                <a href="https://github.com/AlinaNeculai">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="icons-contact">
+                <a href="https://www.linkedin.com/in/alina-neculai-a979b2210/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="icons-contact">
+                <p class="mail">alinaneculai19@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="scrollup" id="scroll-top">
+        <i class="fas fa-arrow-up scroll-up-icon"></i>
+    </a>
+    <video class="contact-video" width="320" height="240" autoplay loop muted playsinline>
+        <source src=./img/bye.mp4 type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+<footer class="footer">
+    <p>©2021 by Alina. All rights reserved.</p>
+</footer>
+</body>
+</html>

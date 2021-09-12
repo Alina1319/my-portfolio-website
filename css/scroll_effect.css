@@ -1,0 +1,16 @@
+.intro-text,
+.intro-text1,
+.intro-text2,
+.intro-text3,
+.intro-text4,
+.intro-text5,
+.intro-text6 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.9s all ease-in-out;
+}
+
+.intro-appear {
+    opacity: 1;
+    transform: translateY(0px);
+}
